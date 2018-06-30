@@ -1,0 +1,100 @@
+body, html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  height: 100vh;
+  background-image: url('../img/close-up-color-flora-934011.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 15px;
+}
+
+.intro {
+  text-align: center;
+  border: 1px red solid;
+  position: relative;
+  top: 30px;
+}
+
+header p {
+  font-size: 17px;
+  margin: 0 20px;
+}
+
+#heart {
+  color: red;
+  font-size: 25px;
+}
+
+/*Work section*/
+#work {
+  overflow: hidden;
+  background-color: #dfe8f1;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectexample {
+  width: 100%;
+  margin: 35px 0;
+}
+
+img {
+  width: 60vw;
+  height: 50vh;
+}
+
+.imgeffect {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projectexample:hover .imgeffect {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*RESPONSIVE*/
+@media only screen and (min-width:600px) {
+  .projectexample {
+    width: 50%;
+  }
+
+  img {
+    width: 80%;
+    height: 80%;
+  }
+
+}
+
+@media only screen and (min-width:800px) {
+  img {
+    width: 30vw;
+    height: 50vh;
+  }
+
+}
